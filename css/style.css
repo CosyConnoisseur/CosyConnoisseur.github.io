@@ -1,0 +1,163 @@
+body {
+  background-image: linear-gradient(to bottom, #232526, #5c5f61);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgb(65, 65, 65);
+  color: #FFD4CA;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  line-height: normal;
+  transition: ease 0.3s;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+  transition: ease 0.3s;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.card {
+  background-color: #736e9c;
+  color: #FFD4CA;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  transition: ease 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.005);
+  box-shadow: 3px 5px 20px rgba(0,0,0,2);
+}
+
+.list{
+  padding: 0px;
+  transition: ease 0.3s;
+}
+
+.list li {
+  font-size: xx-large;
+  display: inline ;
+  transition: ease 0.3s;
+}
+
+.sm-btn{
+  color: white;
+}
+
+.fa-brands:active {
+  transform: scale(0.9);
+  transition: ease 0.2s;
+}
+
+.sm-btn:visited {
+  color: rgb(172, 0, 94);
+}
+
+.fa-brands:active {
+  color: rgb(177, 177, 177);
+  /* transform: scale(0.9); */
+  transition: ease 0.2s;
+}
+
+
+.container {
+  width: 700px;
+  margin: 0 auto ;
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #FFD4CA;
+  width: 100px;
+  transition: ease 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+  background-color: aliceblue;
+}
+
+.btn:active {
+  transform: scale(0.5);
+  background-color: rgb(255, 240, 240);
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 5px 20px rgba(0,0,0,2);
+}
+
+.profile-pic:active {
+  transform: scale(0.9);
+}
+
+.adventure-pic {
+  width: 200px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+  transition: ease 0.3s;
+}
+
+.adventure-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 5px 20px rgba(0,0,0,2);
+}
+
+.adventure-pic:active {
+  transform: scale(3);
+}
+
+
+div.card ul.list li a.sm-btn i.fa-brands {
+  transition: ease 0.2s;
+}
+
+div.card ul.list li a.sm-btn:active i.fa-brands:active {
+  transform: scale(0.8);
+  transition: ease 0.1s;
+}
+
+div.card ul.list li a.sm-btn:hover i.fa-brands {
+  transform: scale(1.5) ;
+}
+
+
+/*  */
+
+/* For Small Screens / Mobile Phones */
+@media (max-width: 600px) {
+
+  .container {
+  width: 350px;
+  height: auto;
+  margin: 0 auto ;
+}
+
+
+
+
+
+
+}
+
+/* For Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .btn {
+    font-size: 15px;
+  }
+}

@@ -1,42 +1,108 @@
 <html>
   <head>
-      <title>
-        profile page
-      </title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-      <link rel="stylesheet" href="css/style.css"
-    </head>
+    <title>
+      CosyConnoisseur Portfolio
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </head>
     <body>
-      <div class="container">
-        <div class="card">
+      <div class="my-container">
+        <div class="my-card">
           <img class="profile-pic" src="https://avatars.githubusercontent.com/u/114310779?v=4" alt="Person with a happy expression"/>
           <h1>Hello, I'm Shane</h1>
+          <p>Full-Stack Developer</p>
           <h2>I like programming!</h2>
-          <p>gRaPhIc dEsIgN iS mY pAsSiOn</p>
         </div>
-        <div class="card">
+        <div class="my-card">
           <div class="images">
           <img class="adventure-pic" src="images/53.png" alt="skydiving"/>
-          <img class="adventure-pic" src="images/fuji.jpg" alt="skydiving"/>
+          <img class="adventure-pic" src="images/fuji.jpg" alt="hiking"/>
           </div>
           <h1>I like adventure!</h1>
           <h2>  </h2>
           <p>  </p>
         </div>
-        <div class="card">
-          <button class="btn">
-            This is a button!
+        <div class="my-card" style="min-height: 400px;">
+          <h2>Check out some of my projects</h2>
+
+
+        <nav class="nav nav-tabs justify-content-center nav-justified" id="myTab" role="tablist">
+          <button class="nav-link active text-dark campaign-tab tab-one" id="synopsis-tab" data-bs-toggle="tab" data-bs-target="#synopsis-pane" type="button" role="tab" aria-controls="synopsis-pane" aria-selected="true">
+            OmniQuill <image src="assets/omniquill-icon.png" class="rounded" style="max-width: 30px;"></image>
+            </button>
+
+          <button class="nav-link text-dark campaign-tab tab-two" id="characters-tab" data-bs-toggle="tab" data-bs-target="#characters-pane" type="button" role="tab" aria-controls="characters-pane" aria-selected="false">
+            Waifood <image src="assets/Umami-Chan.png" class="rounded" style="max-width: 30px;"></image>
           </button>
+
+          <button class="nav-link text-dark w-100 campaign-tab tab-three" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-pane" type="button" role="tab" aria-controls="notes-pane" aria-selected="false">
+            Viewing <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-fill d-block mx-auto" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                  </svg>
+          </button>
+
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="synopsis-pane" role="tabpanel" aria-labelledby="synopsis-tab">
+            <a class="btn btn-primary my-2" style="text-decoration: none;" href="http://www.omniquill.ink/" target=”_blank”>
+            <image src="assets/omniquill.png" class="my-2 rounded" style="width: 500px; max-height: 280px; object-fit:cover;"></image>
+            </a>
+            <br>
+            Synopsis Content Goes Here
+            <br><br>
+            <a class="btn btn-primary" style="text-decoration: none;" href="http://www.omniquill.ink/" target=”_blank”>Check it out!</a>
+          </div>
+
+
+          <div class="tab-pane fade" id="characters-pane" role="tabpanel" aria-labelledby="characters-tab">
+            <a class="btn btn-primary my-2" style="text-decoration: none;" href="https://secure-gorge-00897-32ed4e9d0b45.herokuapp.com/" target=”_blank”>
+            <image src="assets/waifood-showcase.png" class="my-2 rounded" style="max-width: 500px;"></image>
+            </a>
+            <br>
+            My first collaberative project made during Le Wagon bootcamp.
+            We were a group of 4 given 2 weeks to ship to production.
+            I was the project manager and also did a lot of the front end styling/design of the site,
+            the homepage in perticular. Using Gemini's API, you can ask our AI assistant Umami-chan to generate some recipes for you.
+            She also considers any allergies, preferences, and dislikes you might have set up on your account.
+            Umami-chan is a tsundere 'waifu' that is your personal cook!
+            <br><br>
+            <a class="btn btn-primary" style="text-decoration: none;" href="https://secure-gorge-00897-32ed4e9d0b45.herokuapp.com/" target=”_blank”>Check it out!</a>
+          </div>
+
+
+        <div class="tab-pane fade" id="notes-pane" role="tabpanel" aria-labelledby="notes-tab">
+          One of my first projects made during Le Wagon bootcamp.
+          The first real project that we were left to do by ourselves and send to production.
+          It's a simple site where you can choose from a limited number of movies, and make unique lists to organize them.
+          You can add your own pictures to the lists, leave reviews for them, and create as many as you like.
+          <br><br>
+            <a class="btn btn-primary" style="text-decoration: none;" href="https://www.google.com" target=”_blank”>Check it out!</a>
         </div>
-        <div class="card">
-          <h2>Follow me!</h2>
-          <ul class="list">
-            <li><a href="https://github.com/CosyConnoisseur" target="_blank" class="sm-btn"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/shanehaddock7" target="_blank" class="sm-btn"><i class="fa-brands fa-instagram" class="sm-btn"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/shane-haddock-9464a33ba/" target="_blank" class="sm-btn"><i class="fa-brands fa-linkedin" class="sm-btn"></i></a></li>
-          </ul>
-        </div>
+
+
       </div>
+        </div>
+        <div class="my-card">
+        <button class="my-btn">
+          This is a button!
+        </button>
+      </div>
+      <div class="my-card">
+        <h2>Feel free to connect!</h2>
+        <ul class="my-list">
+          <li><a href="https://github.com/CosyConnoisseur" target="_blank" class="my-sm-btn"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/shanehaddock7" target="_blank" class="my-sm-btn"><i class="fa-brands fa-instagram" class="my-sm-btn"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/shane-haddock-9464a33ba/" target="_blank" class="my-sm-btn"><i class="fa-brands fa-linkedin" class="my-sm-btn"></i></a></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

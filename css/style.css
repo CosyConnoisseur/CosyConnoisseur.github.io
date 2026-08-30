@@ -26,7 +26,7 @@ body {
 
 }
 
-.card {
+.my-card {
   background-color: #736e9c;
   color: #FFD4CA;
   border-radius: 10px;
@@ -37,23 +37,23 @@ body {
   transition: ease 0.3s;
 }
 
-.card:hover {
+.my-card:hover {
   transform: scale(1.005);
   box-shadow: 3px 5px 20px rgba(0,0,0,2);
 }
 
-.list{
+.my-list{
   padding: 0px;
   transition: ease 0.3s;
 }
 
-.list li {
+.my-list li {
   font-size: xx-large;
   display: inline ;
   transition: ease 0.3s;
 }
 
-.sm-btn{
+.my-sm-btn{
   color: white;
 }
 
@@ -62,7 +62,7 @@ body {
   transition: ease 0.2s;
 }
 
-.sm-btn:visited {
+.my-sm-btn:visited {
   color: rgb(172, 0, 94);
 }
 
@@ -73,12 +73,12 @@ body {
 }
 
 
-.container {
+.my-container {
   width: 700px;
   margin: 0 auto ;
 }
 
-.btn {
+.my-btn {
   border: none;
   border-radius: 20px;
   padding: 10px;
@@ -87,12 +87,12 @@ body {
   transition: ease 0.3s;
 }
 
-.btn:hover {
+.my-btn:hover {
   transform: scale(1.5);
   background-color: aliceblue;
 }
 
-.btn:active {
+.my-btn:active {
   transform: scale(0.5);
   background-color: rgb(255, 240, 240);
 }
@@ -123,16 +123,16 @@ body {
 }
 
 
-div.card ul.list li a.sm-btn i.fa-brands {
+div.my-card ul.my-list li a.my-sm-btn i.fa-brands {
   transition: ease 0.2s;
 }
 
-div.card ul.list li a.sm-btn:active i.fa-brands:active {
+div.my-card ul.my-list li a.my-sm-btn:active i.fa-brands:active {
   transform: scale(0.8);
   transition: ease 0.1s;
 }
 
-div.card ul.list li a.sm-btn:hover i.fa-brands {
+div.my-card ul.my-list li a.my-sm-btn:hover i.fa-brands {
   transform: scale(1.5) ;
 }
 

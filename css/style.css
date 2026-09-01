@@ -17,12 +17,12 @@ body {
   transition: ease 0.3s;
 }
 
-.images {
+.flex-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 
 }
 
@@ -113,6 +113,13 @@ body {
   transition: ease 0.3s;
 }
 
+.cropped {
+  height: 200px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 .adventure-pic:hover {
   transform: scale(1.1);
   box-shadow: 3px 5px 20px rgba(0,0,0,2);
@@ -140,17 +147,34 @@ div.my-card ul.my-list li a.my-sm-btn:hover i.fa-brands {
 /*  */
 
 /* For Small Screens / Mobile Phones */
-@media (max-width: 600px) {
+@media (max-width: 690px) {
 
-  .container {
-  width: 350px;
+  .my-container {
+  max-width: 350px !important;
   height: auto;
   margin: 0 auto ;
 }
 
 
+.flex-images {
+  gap: 0px;
+  margin: 0;
+}
 
+.adventure-pic {
+  max-width: 100px !important;
+  margin: auto;
+}
 
+.cropped {
+  max-height: 100px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+.port-image{
+  max-width: 250px !important;
+}
 
 
 }

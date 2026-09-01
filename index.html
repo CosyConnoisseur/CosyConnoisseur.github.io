@@ -21,9 +21,10 @@
           <h2>I like programming!</h2>
         </div>
         <div class="my-card">
-          <div class="images">
-          <img class="adventure-pic" src="images/53.png" alt="skydiving"/>
-          <img class="adventure-pic" src="images/fuji.jpg" alt="hiking"/>
+          <div class="flex-images">
+            <img class="adventure-pic cropped" src="assets/53.png" alt="skydiving"/>
+            <img class="adventure-pic" src="assets//fuji.jpg" alt="hiking"/>
+            <img class="adventure-pic cropped" src="assets//guitar.gif" alt="guitar"/>
           </div>
           <h1>I like adventure!</h1>
           <h2>  </h2>
@@ -34,18 +35,16 @@
 
 
         <nav class="nav nav-tabs justify-content-center nav-justified" id="myTab" role="tablist">
-          <button class="nav-link active text-dark campaign-tab tab-one" id="synopsis-tab" data-bs-toggle="tab" data-bs-target="#synopsis-pane" type="button" role="tab" aria-controls="synopsis-pane" aria-selected="true">
+          <button class="nav-link active text-dark campaign-tab tab-one py-4" id="synopsis-tab" data-bs-toggle="tab" data-bs-target="#synopsis-pane" type="button" role="tab" aria-controls="synopsis-pane" aria-selected="true">
             OmniQuill <image src="assets/omniquill-icon.png" class="rounded" style="max-width: 30px;"></image>
             </button>
 
-          <button class="nav-link text-dark campaign-tab tab-two" id="characters-tab" data-bs-toggle="tab" data-bs-target="#characters-pane" type="button" role="tab" aria-controls="characters-pane" aria-selected="false">
-            Waifood <image src="assets/Umami-Chan.png" class="rounded" style="max-width: 30px;"></image>
+          <button class="nav-link text-dark campaign-tab tab-two py-4" id="characters-tab" data-bs-toggle="tab" data-bs-target="#characters-pane" type="button" role="tab" aria-controls="characters-pane" aria-selected="false">
+            Waifood <image src="assets/Umami-Chan.png" class="rounded" style="max-width: 50px;"></image>
           </button>
 
-          <button class="nav-link text-dark w-100 campaign-tab tab-three" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-pane" type="button" role="tab" aria-controls="notes-pane" aria-selected="false">
-            Viewing <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-fill d-block mx-auto" viewBox="0 0 16 16">
-                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
-                  </svg>
+          <button class="nav-link text-dark w-100 campaign-tab tab-three py-4" id="notes-tab" data-bs-toggle="tab" data-bs-target="#notes-pane" type="button" role="tab" aria-controls="notes-pane" aria-selected="false">
+            Viewing <i class="fa-solid fa-film"></i>
           </button>
 
         </nav>
@@ -53,10 +52,12 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="synopsis-pane" role="tabpanel" aria-labelledby="synopsis-tab">
             <a class="btn btn-primary my-2" style="text-decoration: none;" href="http://www.omniquill.ink/" target=”_blank”>
-            <image src="assets/omniquill.png" class="my-2 rounded" style="width: 500px; max-height: 280px; object-fit:cover;"></image>
+            <image src="assets/omniquill.png" class="port-image my-2 rounded" style="width: 500px; max-height: 280px; object-fit:cover;"></image>
             </a>
             <br>
-            Synopsis Content Goes Here
+            OmniQuill is a Table-Top game helper and social media app. It helps keep track of stories and characters for long-form campaigns.
+            Featuring AI integrated character creation and session recording. It automatically provides summaries, highlights
+            and digitises character sheets so players can focus on the game.
             <br><br>
             <a class="btn btn-primary" style="text-decoration: none;" href="http://www.omniquill.ink/" target=”_blank”>Check it out!</a>
           </div>
@@ -64,14 +65,15 @@
 
           <div class="tab-pane fade" id="characters-pane" role="tabpanel" aria-labelledby="characters-tab">
             <a class="btn btn-primary my-2" style="text-decoration: none;" href="https://secure-gorge-00897-32ed4e9d0b45.herokuapp.com/" target=”_blank”>
-            <image src="assets/waifood-showcase.png" class="my-2 rounded" style="max-width: 500px;"></image>
+            <image src="assets/waifood-showcase.png" class="port-image my-2 rounded" style="max-width: 500px;"></image>
             </a>
             <br>
-            My first collaberative project made during Le Wagon bootcamp.
-            We were a group of 4 given 2 weeks to ship to production.
-            I was the project manager and also did a lot of the front end styling/design of the site,
-            the homepage in perticular. Using Gemini's API, you can ask our AI assistant Umami-chan to generate some recipes for you.
-            She also considers any allergies, preferences, and dislikes you might have set up on your account.
+            My first collaborative project.
+            As a group of 4 given, we had 2 weeks to ship to production.
+            I was the backend lead and also did some layout design for the site.
+            Using Gemini's API and structured output, you can ask our AI assistant Umami-chan to provide some recipe ideas for you.
+            She will respond in a charasmatic way and provide 3 generated recipes full of information that users can save, edit and share.
+            She also considers any allergies, preferences, and dislikes you might have noted on your account.
             Umami-chan is a tsundere 'waifu' that is your personal cook!
             <br><br>
             <a class="btn btn-primary" style="text-decoration: none;" href="https://secure-gorge-00897-32ed4e9d0b45.herokuapp.com/" target=”_blank”>Check it out!</a>
@@ -79,12 +81,14 @@
 
 
         <div class="tab-pane fade" id="notes-pane" role="tabpanel" aria-labelledby="notes-tab">
-          One of my first projects made during Le Wagon bootcamp.
-          The first real project that we were left to do by ourselves and send to production.
-          It's a simple site where you can choose from a limited number of movies, and make unique lists to organize them.
-          You can add your own pictures to the lists, leave reviews for them, and create as many as you like.
+          <a class="btn btn-primary my-2" style="text-decoration: none;" href="https://shane-movie-watchlist-00e88bcde7d5.herokuapp.com/lists" target=”_blank”></a>
+          One of my first projects during the Le Wagon bootcamp. The task was to build a movie watch-list app in Rails.
+          This is the first real project where we were encouraged to build by ourselves, try to add an extra feature, and send to production.
+          It's a simple site where you can choose from a limited number of movies and make unique lists to organize them.
+          Users can create lists, add movies and leave reviews.
+          It features API calls for the images and banners based on how the user named their lists.
           <br><br>
-            <a class="btn btn-primary" style="text-decoration: none;" href="https://www.google.com" target=”_blank”>Check it out!</a>
+            <a class="btn btn-primary" style="text-decoration: none;" href="https://shane-movie-watchlist-00e88bcde7d5.herokuapp.com/lists" target=”_blank”>Check it out!</a>
         </div>
 
 
